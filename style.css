@@ -1,0 +1,644 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: Arial;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+}
+.flex1{
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    color: gray;
+    line-height: 25px;
+}
+.head{
+    position: relative;
+    z-index: 10;
+    color: white;
+
+}
+.head .content{
+    padding: 30px;
+}
+.head span{
+    opacity: 0.7;
+}
+.head hr{
+    width: 30px;
+    height: 1px;
+    margin: 20px 0 0 20px;
+    background: white;
+    opacity: 0.7;
+}
+.socialmedia i{
+
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: aquamarine;
+    border: 2px solid aquamarine;
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.socialmedia i:hover{
+    border: 2px solid white;
+    color: white;
+}
+/*...............Header................*/
+.sidenav{
+    height: 100%;
+    width: 0;
+    background: aquamarine;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a{
+    margin: 20px;
+    display: block;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top: 13px;
+    right: 32px;
+    font-size: 38px;
+    margin-left: 50px;
+    color: white;
+    cursor: pointer;
+}
+.sidenav a:hover{
+    color: crimson;
+}
+.menuitem{
+    margin-top: 20px;
+}
+.hamburger-icon{
+    position: absolute;
+    z-index: 1000;
+    right: 14%;
+    top: 30px;
+    cursor: pointer;
+    display: inherit;
+}
+
+/*.............Home............*/
+
+.home img{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 105vh;
+    background-size: cover;
+}
+.home::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 105vh;
+    background: rgba(0, 0, 0,0.7);
+    z-index: -1;
+}
+.home .heading{
+    position: relative;
+    z-index: 10;
+    color: white;
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 5%;
+}
+.heading h1{
+    font-size: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 120px;
+}
+.heading h1 span{
+    color: aquamarine;
+}
+.heading p{
+    font-size: 16px;
+    line-height: 30px;
+    color: white;
+    opacity: 0.7;
+}
+button{
+    background: aquamarine;
+    padding: 25px 80px;
+    border: none;
+    color: rgb(28, 28, 28);
+    border-radius: 50px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+button:hover{
+    background: whitesmoke;
+    color: black;
+}
+
+/*...............menu.........*/
+
+.top{
+    margin-top: 100px;
+}
+.mtop{
+ margin-top: 50px;
+}
+.container{
+    margin: auto;
+    max-width: 90%;
+
+}
+.heading h2{
+    font-size: 50px;
+    margin-top: 15px;
+}
+.heading h5{
+    color: #4d784d;;
+    font-size: 35px;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.menu{
+    text-align: center;
+}
+.menu h3{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*......................Wrapper....................*/
+
+.heading2 h1{
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 80px;
+    color: white;
+}
+.left, .right{
+    width: 50%;
+    margin: 20px;
+}
+.wrapper{
+    color: white;
+    background-image: url(./a3.jpg);
+    height: 110vh;
+    background-attachment: fixed;background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper .left , .wrapper .right{
+    padding-top: 10%;
+}
+.wrapper .right {
+    float: right;
+}
+.wrapper .text{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.wrapper i{
+    font-size: 40px;
+    margin-right: 20px;
+}
+.wrapper .btn1{
+    margin-left: 20px;
+}
+.btn1{
+    background: black;
+    color: white;
+    transition: 0.5s;
+}
+.btn1:hover{
+    background: rgb(218, 168, 82);
+    color: white;
+}
+/*.........................LIst Box......................*/
+
+.grid{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap: 30px;
+}
+.list{
+    background: #8ce9b6;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 30px;
+}
+.list p{
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size:18px;
+}
+.list .box{
+    border-right: 2px solid rgba(255,255,255,0.7);
+    margin-top: 50px;
+}
+.list .box:nth-child(3),
+.list .box:nth-child(6)
+{
+    border: none;
+}
+
+/*......................Menu List...........................*/
+
+.menu-list .heading{
+    text-align: center;
+}
+.menu-list .box{
+    margin-top: 20px;
+}
+.menu-list img{
+    width: 100px;
+    height: 100px;
+}
+.menu-list .text{
+margin-top: 5px;
+}
+.menu-list p{
+    margin-top: 25px;
+}
+.menu-list hr{
+    width: 35%;
+    height: 2px;
+    margin-top: 5%;
+    border-top: 2px solid gray;
+}
+.menu-list .price h5{
+    margin-top: 20px;
+}
+/*------------------------------- open time flex----------------------------->*/
+
+.opentime{
+    height: 120vh;
+}
+.opentime .right, .opentime .left{
+margin: 0;
+}
+.opentime .heading{
+    position: relative;
+}
+.opentime .heading span{
+    color: red;
+}
+.opentime .right h1{
+    font-size: 50px;
+    line-height: 50px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 5%;
+}
+.opentime .left .heading h1{
+    color: white;
+    font-size: 80px;
+    
+}
+.opentime img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.opentime .left::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0,0.3);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.opentime .left .heading{
+    position: absolute;
+    top: 30%;
+    padding: 0;
+    text-align: center;
+}
+.opentime .left{
+    position: relative;
+}
+.opentime .box{
+    height: 60vh;
+}
+.opentime .box1,.opentime .box2{
+    position: relative;
+}
+.opentime  .box2{
+    background: #8ce9b6;
+    z-index: -1;
+}
+.opentime .time{
+    max-width: 50%;
+    margin: auto;
+}
+.opentime .time .day{
+    margin-top: 20px;
+}
+.opentime .time h4{
+    font-size: 20px;
+}
+.opentime .time h5{
+    color: cornflowerblue;
+    font-size: 18px;
+    font-weight: 800;
+}
+.opentime .time p{
+    color: red;
+    font-weight: bold;
+}
+.opentime .box2 h1{
+   font-size: 100px;
+   line-height: 100px;
+}
+.opentime .box2 span{
+    color: aqua;
+}
+/*------------------------------- open time flex----------------------------->*/
+/*------------------------------- Product Mento----------------------------->*/
+.product {
+    text-align: center;
+    padding: 50px;
+}
+.product img{
+    width: 100%;
+    height: 100%;
+}
+.product .grid{
+    grid-template-columns: repeat(4,1fr);
+}
+.product .flex{
+    justify-content: center;
+    margin: 5px;
+}
+.product h5,.product h4{
+font-size: 17px;
+font-weight: 700;
+margin: 5px;
+}
+.product .flex i{
+    margin: 5px;
+    font-size: 12px;
+    color: #f4c402;
+}
+
+/*-------------------------------Brand Mento----------------------------->*/
+.brand{
+    background: #f2f1ed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.brand .grid{
+    grid-template-columns: repeat(5,1fr);
+}
+.brand img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.brand img:hover{
+    transform: scale(1.1);
+}
+/*-------------------------------Blog Mento---------------------*/
+.blog{
+    text-align: center;
+}
+.blog .grid{
+    grid-template-columns: repeat(4,1fr);
+    padding: 50px;
+    text-align: left;
+}
+.blog img{
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    transition: 0.5s;
+    position: relative;
+    border-radius: 10px;
+}
+.blog img:hover{
+    transform: scale(1.1);
+}
+.blog .coffee{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #4D8B55;
+    color: white;
+    margin: 20px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.blog text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.blog .text i{
+color: #4D8B55;
+margin-right: 10px;
+padding-top: 10px;
+}
+.blog .text label{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+    font-size: 14px;
+}
+.blog .text h2{
+    letter-spacing: 0;
+    margin-top: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 11px;
+}
+.blog .text:hover{
+    color: #4D8B55;
+}
+/*.............................Image Mento............................*/
+.image .grid{
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 0;
+}
+.image .box{
+position: relative;
+transition: 0.5s;
+cursor: pointer;
+}
+.image .img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.image img{
+    width: 100%;
+    height: 200px;
+    transition: 0.5s;
+}
+.image img:hover{
+    transform: scale(1.1);
+}
+.image .icon{
+    width: 50px;
+    height: 50px;
+    background: #4D8B55;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    opacity: 0;
+}
+.imager .icon:hover{
+    opacity: 1;
+}
+/*.....................................Footer Mento.............................................*/
+footer{
+    background-image: url(./c4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+.footerbg{
+    background:rgba(0, 0, 0,0.5) ;
+}
+footer h3{
+    color: #4D8B55;
+    font-size: 25px;
+    font-weight: 800;
+    border-bottom: 3px solid #4D8B55;
+    margin-bottom: 50px;
+}
+footer p{
+    margin-top: 20px;
+    color: white;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+footer .icon i{
+    color: #4D8855;
+    margin-left: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 30px;
+ 
+}
+footer .icon i:hover{
+  color: yellow;
+  transform: scale(1.2);
+}
+
+footer .address .item{
+    margin-bottom: 30px;
+}
+footer .address i{
+    font-size: 25px;
+    margin-right: 20px;
+}
+footer .address h5{
+    color: #4D8855;
+    font-size: 18px;
+    flex-flow: 800;
+    margin-bottom: 10px;
+}
+footer .input{
+    background: white;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+footer input{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 20px;
+}
+footer .submit{
+    background: #4D8855;
+    padding: 10px 114px;
+    color: white;
+    font-weight: 800;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.legal{
+    border-top: 1px solid rgba(255,255,255,0.7);
+}
+.legal p{
+    margin: 0;
+    padding: 30px 0 30px 80px;
+}
+
+
+@media only screen and (max-width:760px)
+{
+    .head .socialmedia,
+    .opentime .left,
+    .wrapper .right{
+        display: none;
+    }
+     .heading h1{
+        font-size: 80px;
+        line-height: 80px
+     }
+    .menu{
+        margin-top: 50%;
+    } 
+    .left .right{
+        width: 100%;
+    }
+    .opentime, .wrapper .container,.menu-list .content{
+        flex-direction: column;
+    }
+    .wrapper{
+        background-position: right;
+    }
+    .image .grid,
+    .blog  .grid,
+    .brand .grid,
+    .product.grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .list .box{
+        border: none;
+    }
+    footer .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
